@@ -4,3 +4,17 @@
 //456 -> 5
 //782 -> 8
 //918 -> 1
+
+Console.Clear();
+Console.WriteLine("Введите трехзначное число ");
+int A = int.Parse(Console.ReadLine());
+
+if (A>99 && A<1000)
+{
+    int B = A/100;
+    Console.WriteLine($"{(A-B*100 - A%10)/10}");
+}
+else 
+{
+    Console.WriteLine("число не является трехзначным");
+}
